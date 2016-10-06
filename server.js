@@ -12,7 +12,7 @@ app.get('/article-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'one.html'));
 });
 app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'second.html'));
+  res.sendFile(path.join(__dirname, 'ui', 'two.html'));
 });
 app.get('/article-third', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'third.html'));
