@@ -23,9 +23,7 @@ app.use(morgan('combined'));
     heading=data.heading;
     date=data.date;
     content=data.content;
-    
-    
-    var htmlTemplate=
+     var htmlTemplate=
          `<html>
 <head>
 	<title>${title}
@@ -43,10 +41,10 @@ app.use(morgan('combined'));
 		${heading}
 	</h3>
 	<div>
-		${heading}
+		${date}
 	</div>
 	<div>
-         ${content};
+         ${content}
 	</div>
 	</div>
 </body>
