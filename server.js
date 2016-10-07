@@ -8,7 +8,7 @@ app.use(morgan('combined'));
      title:'Article One',
      heading:'Article One',
      date:'Oct 5 ,2016',
-     content:`	<p>
+     content:`<p>
 		This is for my first my first article.I am so happy to know that i am learning html and css and java script.
     </p>
     <p>
@@ -44,7 +44,7 @@ app.use(morgan('combined'));
 		${date}
 	</div>
 	<div>
-         ${content}
+        ${content}
 	</div>
 	</div>
 </body>
