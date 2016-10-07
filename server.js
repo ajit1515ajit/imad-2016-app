@@ -52,7 +52,7 @@ app.use(morgan('combined'));
 </body>
 </html>
 `;
-    return htmlTemplae;
+    return htmlTemplate;
 }
 
 app.get('/', function (req, res) {
