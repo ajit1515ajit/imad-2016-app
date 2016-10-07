@@ -34,7 +34,7 @@ app.use(morgan('combined'));
 <body>
     <div class="container">
 	<div>
-		<a href="/">HOME</a>
+		<a href="index.html">HOME</a>
 	</div>
 	<hr>
 	<h3>
