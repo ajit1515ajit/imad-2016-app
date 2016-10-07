@@ -18,12 +18,12 @@ app.use(morgan('combined'));
 		This is for my first my first article.I am so happy to know that i am learning html and css and java script.
     </p>`
      };
-     function createTemplate(data)
+    function createTemplate(data)
 {   title=data.title;
     heading=data.heading;
     date=data.date;
     content=data.content;
-     var htmlTemplate=
+    var htmlTemplate=
          `<html>
 <head>
 	<title>${title}
@@ -54,10 +54,10 @@ app.use(morgan('combined'));
 }
 
 app.get('/', function (req, res) {
-  res.send(createTemplate('ArticleOne'));
+  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'one.html'));
+  res.send(createTemplate('articleOne'));
 });
 app.get('/article-two', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'two.html'));
