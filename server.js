@@ -4,7 +4,8 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
- var articleOne={
+var articles={
+ articleOne:{
      title:'Article One',
      heading:'Article One',
      date:'Oct 5 ,2016',
@@ -17,8 +18,37 @@ app.use(morgan('combined'));
     <p>
 		This is for my first my first article.I am so happy to know that i am learning html and css and java script.
     </p>`
-     };
-    function createTemplate(data)
+     },
+ articleTwo:{
+     title:'Article Two',
+     heading:'Article Two',
+     date:'Oct 5 ,2016',
+     content:`<p>
+		This is for my Two my first article.I am so happy to know that i am learning html and css and java script.
+    </p>
+    <p>
+		This is for my Two my first article.I am so happy to know that i am learning html and css and java script.
+    </p>
+    <p>
+		This is for my Two my first article.I am so happy to know that i am learning html and css and java script.
+    </p>`
+     },
+ articleThree:{
+    title:'Article Three',
+     heading:'Article Three',
+     date:'Oct 5 ,2016',
+     content:`<p>
+		This is for my Three my first article.I am so happy to know that i am learning html and css and java script.
+    </p>
+    <p>
+		This is for my Three my first article.I am so happy to know that i am learning html and css and java script.
+    </p>
+    <p>
+		This is for my Three my first article.I am so happy to know that i am learning html and css and java script.
+    </p>`
+     } 
+};
+function createTemplate(data)
 {   title=data.title;
     heading=data.heading;
     date=data.date;
