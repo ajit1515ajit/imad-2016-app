@@ -35,9 +35,9 @@ var articles={
      },
  'article-three':{
     title:'Article Three',
-     heading:'Article Three',
-     date:'Oct 5 ,2016',
-     content:`<p>
+    heading:'Article Three',
+    date:'Oct 5 ,2016',
+    content:`<p>
 		This is for my Three my first article.I am so happy to know that i am learning html and css and java script.
     </p>
     <p>
