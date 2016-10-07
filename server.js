@@ -4,9 +4,59 @@ var path = require('path');
 
 var app = express();
 app.use(morgan('combined'));
+ var articleOne={
+     title:'Article One',
+     heading:'Article One',
+     date:'Oct 5 ,2016',
+     content:`	<p>
+		This is for my first my first article.I am so happy to know that i am learning html and css and java script.
+    </p>
+    <p>
+		This is for my first my first article.I am so happy to know that i am learning html and css and java script.
+    </p>
+    <p>
+		This is for my first my first article.I am so happy to know that i am learning html and css and java script.
+    </p>`
+     };
+     function createTemplate(data)
+{   title=data.title;
+    heading=data.heading;
+    date=data.date;
+    content=data.content;
+    
+    
+    var htmlTemplate=
+         `<html>
+<head>
+	<title>${title}
+	</title>
+	<meta charset="utf-8" name="viewport" content="width-device-width , initial-scale=1">
+	<link rel="stylesheet" href="/ui/style.css">
+</head>
+<body>
+    <div class="container">
+	<div>
+		<a href="/">HOME</a>
+	</div>
+	<hr>
+	<h3>
+		${heading}
+	</h3>
+	<div>
+		${heading}
+	</div>
+	<div>
+         ${content};
+	</div>
+	</div>
+</body>
+</html>
+`;
+    return htmlTemplae;
+}
 
 app.get('/', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'index.html'));
+  res.send(createTemplate('ArticleOne'));
 });
 app.get('/article-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'one.html'));
