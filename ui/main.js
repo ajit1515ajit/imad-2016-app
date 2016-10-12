@@ -1,4 +1,4 @@
-console.log('Loaded!');
+/*console.log('Loaded!');
 console.log("Now Your Will Changed");
 var element=document.getElementById('main');
 element.innerHTML='AJIT JAIN';
@@ -12,5 +12,12 @@ function moveRight(){
 img.onclick=function(){
    // img.style.marginLeft="100px";
     var interval=setInterval(moveRight,50);
+    
+}*/
+counterr=0;
+var button=document.getElementById('counter');
+buttoon.onclick(){
+    var span=ducument.getElementById('count');
+    span.innerHTML=counter.toString();
     
 }
