@@ -16,18 +16,21 @@ img.onclick=function(){
 }*/
 counter=0;
 var button=document.getElementById('counter');
-button.onclick(){
+button.onclick=function(){
 var req= new XMLHttpRequest();
-req.onreadystatechange(){
+req.onreadystatechange=function(){
     if(req.readystate===XMLHttpRequest.DONE){
         if(req.status===200){
             var counter=req.ResponseText;
             var span=ducument.getElementById('count');
     span.innerHTML=counter.toString();
-    
-        }
+       }
     }
-}}
+};
+  
+  req.open('GET','http://ajit1515ajit.imad.hasura-app.io/counter',true);
+  res.send(null);
+};
 
 /*var button=document.getElementById('counter');
 buttoon.onclick(){
