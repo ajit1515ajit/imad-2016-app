@@ -11,13 +11,8 @@ var articles={
      date:'Oct 5 ,2016',
      content:`<p>
 		This is for my first my first article.I am so happy to know that i am learning html and css and java script.
-    </p>
-    <p>
-		This is for my first my first article.I am so happy to know that i am learning html and css and java script.
-    </p>
-    <p>
-		This is for my first my first article.I am so happy to know that i am learning html and css and java script.
     </p>`
+    
      },
  'article-two':{
      title:'Article Two',
@@ -26,12 +21,7 @@ var articles={
      content:`<p>
 		This is for my Two my first article.I am so happy to know that i am learning html and css and java script.
     </p>
-    <p>
-		This is for my Two my first article.I am so happy to know that i am learning html and css and java script.
-    </p>
-    <p>
-		This is for my Two my first article.I am so happy to know that i am learning html and css and java script.
-    </p>`
+    `
      },
  'article-three':{
     title:'Article Three',
@@ -40,12 +30,7 @@ var articles={
     content:`<p>
 		This is for my Three my first article.I am so happy to know that i am learning html and css and java script.
     </p>
-    <p>
-		This is for my Three my first article.I am so happy to know that i am learning html and css and java script.
-    </p>
-    <p>
-		This is for my Three my first article.I am so happy to know that i am learning html and css and java script.
-    </p>`
+   `
      } 
 };
 function createTemplate(data)
