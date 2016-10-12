@@ -15,6 +15,8 @@ img.onclick=function(){
     
 }*/
 counter=0;
+var button=document.getElementById('counter');
+buttoon.onclick(){
 var req= new XMLHttpRequest();
 req.onreadystatechange(){
     if(req.readystate===XMLHttpRequest.DONE){
@@ -25,7 +27,7 @@ req.onreadystatechange(){
     
         }
     }
-}
+}}
 
 /*var button=document.getElementById('counter');
 buttoon.onclick(){
