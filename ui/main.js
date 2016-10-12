@@ -1,4 +1,4 @@
 console.log('Loaded!');
 consol.log("Now Your Will Changed");
 var element=document.getElementById('main-text');
-element="AJIT JAIN";
+element.innerHtml="AJIT JAIN";
