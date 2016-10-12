@@ -3,7 +3,7 @@ console.log("Now Your Will Changed");
 var element=document.getElementById('main');
 element.innerHTML='AJIT JAIN';
 var img =document.getElementById('madi');
-var marginleft;
+var marginleft=0;
 function moveRight(){
     marginLeft=marginLeft+10;
     imag.style.marginLeft=marginLeft+'px';
