@@ -23,7 +23,7 @@ req.onreadystatechange=function(){
     if(req.readyState===XMLHttpRequest.DONE){
         if(req.status===200){
             var counter=req.ResponseText;
-            counter=counter+1;
+            
             var span=ducument.getElementById('count');
             span.innerHTML=counter.toString();
        }
