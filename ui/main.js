@@ -14,19 +14,23 @@ img.onclick=function(){
     var interval=setInterval(moveRight,50);
     
 }*/
+counter=0;
 var req= new XMLHttpRequest();
 req.onreadystatechange(){
     if(req.readystate===XMLHttpRequest.DONE){
         if(req.status===200){
             var counter=req.ResponseText;
+            var span=ducument.getElementById('count');
+    span.innerHTML=counter.toString();
+    
         }
     }
 }
-counter=0;
-var button=document.getElementById('counter');
+
+/*var button=document.getElementById('counter');
 buttoon.onclick(){
     counter=counter+1
     var span=ducument.getElementById('count');
     span.innerHTML=counter.toString();
     
-}
+}*/
