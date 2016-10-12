@@ -14,6 +14,14 @@ img.onclick=function(){
     var interval=setInterval(moveRight,50);
     
 }*/
+var req= new XMLHttpRequest();
+req.onreadystatechange(){
+    if(req.readystate===XMLHttpRequest.DONE){
+        if(req.status===200){
+            var counter=req.ResponseText;
+        }
+    }
+}
 counter=0;
 var button=document.getElementById('counter');
 buttoon.onclick(){
