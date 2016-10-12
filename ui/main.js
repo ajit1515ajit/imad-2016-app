@@ -14,9 +14,10 @@ img.onclick=function(){
     var interval=setInterval(moveRight,50);
     
 }*/
-counterr=0;
+counter=0;
 var button=document.getElementById('counter');
 buttoon.onclick(){
+    counter=counter+1
     var span=ducument.getElementById('count');
     span.innerHTML=counter.toString();
     
