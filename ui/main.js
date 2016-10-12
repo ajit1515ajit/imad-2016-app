@@ -16,7 +16,7 @@ img.onclick=function(){
 }*/
 counter=0;
 var button=document.getElementById('counter');
-buttoon.onclick(){
+button.onclick(){
 var req= new XMLHttpRequest();
 req.onreadystatechange(){
     if(req.readystate===XMLHttpRequest.DONE){
